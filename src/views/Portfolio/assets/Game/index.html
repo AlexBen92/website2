@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+  <body>
+
+
+    <div id="vue-app">
+
+       <div id="boxe" v-bind:class="{burst:ended}"></div>
+
+       <div id="boxe-vie">
+         <div v-bind:style="{ width: vie + '%'}"></div>
+       </div>
+       
+       <div id="controls"></div>
+       <button v-on:click="poing">Poing</button>
+       <button v-on:click="recommence">Recommence</button>
+    </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+ 

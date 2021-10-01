@@ -1,0 +1,12 @@
+<div id="main" v-cloak>
+<h1 class="heading">Services</h1>
+  
+  <ul class="services">
+    <li class="services__item" v-for="service in services" v-on:click="toggleActive(service)" v-bind:class="{ 'active' : service.active }">
+      <span>{{service.name}}</span> <span>{{service.price | currency}}</span>
+    </li>
+  </ul>
+  <p class="total">
+    <span>Total:</span> <span>{{total() | currency}}</span>
+  </p>
+</div>

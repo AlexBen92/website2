@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de FFMI</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <div id="app">
+ 
+  <hr>
+     <label for="">Poids en Kg</label>
+     <input v-model="poids" type="number" name="" id="">
+     <br>
+     <label for="">Taille en Cm</label>
+     <input v-model="taille" type="number" name="" id="">
+     <br>
+     <label for="">Taux de Gras</label>
+     <input v-model="gras" type="number" name="" id="">
+     <br>
+     <hr>
+     <button @click="CalculFFMI()">CALCUL FFMI</button>
+     <br>
+     <h3>{{ resultat.ffmi }}</h3>
+     <h4>{{ resultat.des }}</h4>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+   <script src="app.js"></script> 
+</body>
+</html>

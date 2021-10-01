@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculateur de site</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,700|Rochester'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="main" v-cloak>
+<h1 class="heading"> Mes Services</h1>
+  
+  <ul class="services">
+    <li class="services__item" v-for="service in services" v-on:click="toggleActive(service)" v-bind:class="{ 'active' : service.active }">
+      <span>{{service.name}}</span> <span>{{service.price | currency}}</span>
+    </li>
+  </ul>
+  <p class="total">
+    <span>Total:</span> <span>{{total() | currency}}</span>
+  </p>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

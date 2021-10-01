@@ -1,0 +1,75 @@
+$sans: "Open Sans", sans-serif;
+$script: "Rochester", script;
+
+$background: #37718E;
+$text: #ffffff;
+$primary: #AEF3E7;
+$primary-text: #006080;
+$accent: #C33C54;
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: $sans;
+  color: $text;
+  
+  background-color: $background;
+}
+.heading {
+  font-family: $script;
+  font-size: 3.5rem;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .01rem;
+  text-align: center;
+  text-shadow: 0 3px 0 darken($background, 10%);
+}
+.services {
+  margin-bottom: 1rem;
+  min-width: 50vw;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: .5rem;
+  
+  list-style: none;
+}
+
+.services__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  
+  border-radius: .25rem;
+  box-shadow: 0 3px 3px 0 darken($background, 10%);
+  
+  color: $primary-text;
+  
+  background-color: $primary;
+  
+  &.active {
+    color: $text;
+    
+    background-color: $accent;
+  }
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  
+  border-top: 1px solid $text;
+}

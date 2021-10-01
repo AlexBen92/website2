@@ -1,0 +1,33 @@
+#boxe{
+    width: 400px;
+    height:300px;
+    margin:  0 auto;
+    background:  url(boxe.jpg) center no-repeat;
+    background-size: 80%;
+}
+
+#boxe.burst{
+    background:  url(k.o.jpg) center no-repeat;
+    background-size: 80%;
+}
+
+#boxe-vie{
+    width: 200px;
+    border:2px solid #000;
+    margin: 0 auto 20px auto;
+}
+
+#boxe-vie div{
+    height: 20px;
+    background: crimson;
+
+}
+
+#controls{
+    width: 120px;
+    margin: 0 auto;
+}
+
+body{
+    background-color: dimgray;
+}
