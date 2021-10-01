@@ -57,7 +57,7 @@
               </v-flex>
               <v-flex class="pl-2">
                 <strong>Création de SAAS</strong>
-                <div class="caption mb-2">Platforme de mise en relation</div>
+                <div class="caption mb-2">Plateforme de mise en relation</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -118,7 +118,7 @@
       </v-flex>
       <div class="mt-4 pt-2">
         <v-btn
-          href="https://drive.google.com/file/d/1q0UgrEQQhhnuefuqGfDMM63LbqfeP1Qv/view"
+          href="https://drive.google.com/file/d/1q0UgrEQQhhnuefuqGfDMM63LbqfeP1Qv/view?usp=sharing"
           target="_blank"
           color="green"
           dark
